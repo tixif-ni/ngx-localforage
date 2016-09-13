@@ -30,4 +30,28 @@ export class LocalForageService {
 
         return Observable.fromPromise(promise);
     }
+
+    clear(): Observable<any> {
+        let promise = this.localForage.clear();
+
+        return Observable.fromPromise(promise);
+    }
+
+    length(): Observable<number> {
+        let promise = this.localForage.length();
+
+        return Observable.fromPromise(promise);
+    }
+
+    key(index: number): Observable<string> {
+        let promise = this.localForage.key(index);
+
+        return Observable.fromPromise(promise);
+    }
+
+    keys(): Observable<string[]> {
+        let promise = this.localForage.keys();
+
+        return Observable.fromPromise(promise);
+    }
 }
