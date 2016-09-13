@@ -1,0 +1,48 @@
+{
+  "name": "ng2-localforage",
+  "version": "0.1.0",
+  "scripts": {
+    "lint": "tslint src/**/*.ts",
+    "test": "tsc && karma start",
+    "postinstall": "typings install",
+    "prepublish": "tsc",
+    "tsc": "tsc",
+    "typings": "typings"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/radyz/ng2-localforage.git"
+  },
+  "author": {
+    "name": "Ernesto Chavez Sanchez",
+    "email": "ejchavez88@gmail.com"
+  },
+  "keywords": [
+    "angular",
+    "angular2"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/radyz/ng2-localforage.git/issues"
+  },
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "dependencies": {
+    "localforage": "^1.4.2"
+  },
+  "devDependencies": {
+    "@angular/common": "2.0.0-rc.6",
+    "@angular/compiler": "2.0.0-rc.6",
+    "@angular/core": "2.0.0-rc.6",
+    "@types/localforage": "0.0.29",
+    "codelyzer": "0.0.26",
+    "rxjs": "5.0.0-beta.11",
+    "tslint": "3.13.0",
+    "typescript": "2.0.2",
+    "typings": "^1.0.4",
+    "zone.js": "0.6.17"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
