@@ -31,16 +31,16 @@
     "localforage": "^1.4.2"
   },
   "devDependencies": {
-    "@angular/common": "2.0.0-rc.6",
-    "@angular/compiler": "2.0.0-rc.6",
-    "@angular/core": "2.0.0-rc.6",
+    "@angular/common": "2.0.0",
+    "@angular/compiler": "2.0.0",
+    "@angular/core": "2.0.0",
     "@types/localforage": "0.0.29",
     "codelyzer": "0.0.26",
-    "rxjs": "5.0.0-beta.11",
+    "rxjs": "5.0.0-beta.12",
     "tslint": "3.13.0",
     "typescript": "2.0.2",
     "typings": "^1.0.4",
-    "zone.js": "0.6.17"
+    "zone.js": "0.6.23"
   },
   "engines": {
     "node": ">=0.8.0"
