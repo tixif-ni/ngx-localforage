@@ -21,3 +21,6 @@ Desktop.ini
 # Mac
 .DS_Store
 **/.DS_Store
+
+/compiled
+*.metadata.json
