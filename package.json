@@ -1,10 +1,9 @@
 {
   "name": "ng2-localforage",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "scripts": {
     "lint": "tslint src/**/*.ts",
     "test": "tsc && karma start",
-    "postinstall": "typings install",
     "prepublish": "tsc",
     "tsc": "tsc",
     "typings": "typings"
