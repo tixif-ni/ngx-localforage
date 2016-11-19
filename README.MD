@@ -24,4 +24,4 @@ $ npm run lint
 
 ## License
 
-MIT © [Ernesto Chavez Sanchez](ejchavez88@gmail.com)
+MIT © [Tixif](tixifni@gmail.com)
