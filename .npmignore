@@ -23,8 +23,4 @@ Desktop.ini
 .DS_Store
 **/.DS_Store
 
-/compiled
-# or
 *.ngFactory.ts
-# or no change needed if you already have
-*.ts

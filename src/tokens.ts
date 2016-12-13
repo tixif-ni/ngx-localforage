@@ -1,3 +1,5 @@
 import { OpaqueToken } from '@angular/core';
 
-export const LocalForageToken = new OpaqueToken('localforage');
+export function LocalForageToken() {
+    return new OpaqueToken('localforage');
+}
