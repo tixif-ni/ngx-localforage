@@ -1,11 +1,11 @@
 {
   "name": "ng2-localforage",
-  "version": "0.1.4",
+  "version": "0.1.29",
   "scripts": {
     "lint": "tslint src/**/*.ts",
     "test": "ngc && karma start",
     "prepublish": "ngc",
-    "tsc": "ngc",
+    "ngc": "ngc",
     "typings": "typings"
   },
   "repository": {
@@ -30,17 +30,17 @@
     "localforage": "^1.4.2"
   },
   "devDependencies": {
-    "@angular/common": "2.2.1",
-    "@angular/compiler": "2.2.1",
-    "@angular/compiler-cli": "2.2.1",
-    "@angular/core": "2.2.1",
-    "@angular/platform-server": "2.2.1",
-    "@angular/platform-browser": "2.2.1",
+    "@angular/common": "2.1.1",
+    "@angular/compiler": "2.1.1",
+    "@angular/compiler-cli": "2.1.1",
+    "@angular/core": "2.1.1",
+    "@angular/platform-server": "2.1.1",
+    "@angular/platform-browser": "2.1.1",
     "@types/localforage": "0.0.32",
     "codelyzer": "0.0.26",
     "rxjs": "5.0.0-beta.12",
     "tslint": "3.13.0",
-    "typescript": "^2.0.10",
+    "typescript": "2.0.2",
     "typings": "^1.0.4",
     "zone.js": "0.6.26"
   },

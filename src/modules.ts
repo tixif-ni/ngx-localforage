@@ -5,18 +5,22 @@ import * as localforage from 'localforage';
 import { LocalForageService } from './services';
 import { LocalForageToken } from './tokens';
 
+export function localforageFactory() {
+    return localforage;
+}
+
 
 @NgModule()
 export class LocalForageModule {
     static forRoot(): ModuleWithProviders {
-        let providers: any[] = [{
-            provide: LocalForageToken,
-            useValue: localforage
-        }, LocalForageService];
-
         return {
             ngModule: LocalForageModule,
-            providers: providers
+            providers: [{
+                    provide: LocalForageToken,
+                    useFactory: localforageFactory
+                },
+                LocalForageService
+            ]
         };
     }
 }
