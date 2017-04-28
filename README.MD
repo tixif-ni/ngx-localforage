@@ -1,4 +1,4 @@
-# ng2-localforage
+# ngx-localforage
 
 ## Installation
 
