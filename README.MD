@@ -5,7 +5,7 @@
 To install this library, run:
 
 ```bash
-$ npm install ng2-localforage --save
+$ npm install ngx-localforage --save
 ```
 
 ## Development
@@ -24,4 +24,4 @@ $ npm run lint
 
 ## License
 
-MIT © [Tixif](tixifni@gmail.com)
+MIT © [Tixif](http://tixif.com)
