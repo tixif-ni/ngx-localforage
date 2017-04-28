@@ -1,6 +1,6 @@
 {
   "name": "ngx-localforage",
-  "version": "0.1.31",
+  "version": "0.1.33",
   "scripts": {
     "lint": "tslint src/**/*.ts",
     "test": "ngc && karma start",
