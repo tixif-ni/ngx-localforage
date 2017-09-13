@@ -28,10 +28,6 @@ export class LocalForageModule {
           provide: LocalForageToken,
           useFactory: localforageFactory
         },
-        {
-          provide: 'CONFIG',
-          useValue: config
-        },
         LocalForageService
       ]
     };

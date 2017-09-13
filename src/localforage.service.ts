@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/fromPromise';
 
 import { LocalForageToken } from './localforage.module';
-
+import { LocalForageConfiguration } from './configuration.interface';
 
 @Injectable()
 export class LocalForageService {
@@ -13,7 +13,12 @@ export class LocalForageService {
     @Inject(LocalForageToken) private localForage: any
   ) { }
 
-  getItem(key: string): Observable<any> {
+  config(config: LocalForageConfiguration): Observable<any> {
+    const promise = this.localForage.config(config);
+    return Observable.fromPromise(promise);
+  }
+
+  getItem(key: string): Observable<string> {
     const promise = this.localForage.getItem(key);
     return Observable.fromPromise(promise);
   }
@@ -23,7 +28,7 @@ export class LocalForageService {
     return Observable.fromPromise(promise);
   }
 
-  removeItem(key: string): Observable<any> {
+  removeItem(key: string): Observable<string> {
     const promise = this.localForage.removeItem(key);
     return Observable.fromPromise(promise);
   }
