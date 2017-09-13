@@ -4,7 +4,7 @@
   "scripts": {
     "lint": "tslint src/**/*.ts",
     "test": "karma start",
-    "prepublish": "test && lint && ngc",
+    "prepublish": "lint && ngc",
     "ngc": "ngc",
     "clean": "rimraf dist/ && rimraf compiled",
     "rimraf": "rimraf"
