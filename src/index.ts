@@ -1,2 +1,3 @@
-export { LocalForageModule, localforageFactory } from './modules';
-export { LocalForageService } from './services';
+export { LocalForageConfiguration } from './configuration.interface';
+export { LocalForageModule, localforageFactory } from './localforage.module';
+export { LocalForageService } from './localforage.service';
