@@ -1,2 +1,2 @@
-export * from './modules';
-export * from './services';
+export { LocalForageModule, localforageFactory } from './modules';
+export { LocalForageService } from './services';
