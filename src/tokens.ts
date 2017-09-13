@@ -1,5 +1,5 @@
-import { OpaqueToken } from '@angular/core';
+import { InjectionToken } from '@angular/core';
 
 export function LocalForageToken() {
-  return new OpaqueToken('localforage');
+  return new InjectionToken('localforage');
 }
