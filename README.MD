@@ -58,9 +58,31 @@ All of the localforage methods that are available in [the localforage API](https
 
 ## Localforage Config
 A ```config(config: LocalForageConfiguration)``` method in the ```LocalForageService``` exists, as well as a  and ```LocalForageConfiguration``` type interface exists to configure localforage as is provided in [the localforage API](https://localforage.github.io/localForage/#data-api).
+**Note: The config method needs to be run before any other localforage calls**
+Example, put it in the initialization of your app.component.ts:
+```app.component.ts
+import { LocalForageService, LocalForageConfiguration } from 'ngx-localforage';
 
-Example:
+//...
 
+export class AppComponent implements OnInit {
+
+  constructor ( private localforage: LocalForageService) { }
+
+  ngOnInit() {
+    const config: LocalForageConfiguration = {
+      name: 'myApp',
+      storeName: 'app',
+      description: 'my description'
+    }
+    this.localforage.config(config).subscribe(keys => {
+      console.log(keys);
+    });
+  }
+}
+```
+
+Should you want to choose a driver, you'll need to access localforage variable in the window's global scope like so: ``` driver: window['localforage']['INDEXDB']```, or you can use the profided ```localforageFactory``` and ```LocalForageToken``` to provide localforage in your app's module (see ```localforage.module.ts``` in the ```src/``` directory for an example of how to do this).
 
 ## Development
 
