@@ -18,17 +18,17 @@ export class LocalForageService {
     return Observable.fromPromise(promise);
   }
 
-  getItem(key: string): Observable<string> {
+  getItem(key: string): Observable<any> {
     const promise = this.localForage.getItem(key);
     return Observable.fromPromise(promise);
   }
 
-  setItem(key: string, item: string | string[] | number[]): Observable<any> {
+  setItem(key: string, item: any): Observable<any> {
     const promise = this.localForage.setItem(key, item);
     return Observable.fromPromise(promise);
   }
 
-  removeItem(key: string): Observable<string> {
+  removeItem(key: string): Observable<any> {
     const promise = this.localForage.removeItem(key);
     return Observable.fromPromise(promise);
   }

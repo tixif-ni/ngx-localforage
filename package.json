@@ -2,9 +2,10 @@
   "name": "ngx-localforage",
   "version": "0.1.33",
   "scripts": {
+    "prepublish": "npm run lint && npm run ngc",
     "lint": "tslint src/**/*.ts",
+    "tslint": "tslint",
     "test": "karma start",
-    "prepublish": "lint && ngc",
     "ngc": "ngc",
     "clean": "rimraf dist/ && rimraf compiled",
     "rimraf": "rimraf"
@@ -33,6 +34,7 @@
     "@angular/core": "4.1.0"
   },
   "devDependencies": {
+    "@angular/core": "4.1.0",
     "@angular/compiler": "4.1.0",
     "@angular/compiler-cli": "4.1.0",
     "@angular/platform-server": "4.1.0",
