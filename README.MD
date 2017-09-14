@@ -8,7 +8,7 @@ ngx-localforage is a library that provides Angular4+ abstraction to the [localfo
 $ npm install ngx-localforage --save
 ```
 
-2. In your application's NgModule add ```LocalForageModule``` to the imports section.
+2. In your application's [NgModule](https://angular.io/guide/ngmodule) add ```LocalForageModule``` to the imports section.
 ```app.module.ts
 // ...
 imports: [
@@ -23,7 +23,9 @@ imports: [
 import 'localforage';
 ```
 - Or simply by placing a link to the cdn script in your application's index.html page like so.
-```<script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.5.0/localforage.min.js" defer></script>```
+```index.html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.5.0/localforage.min.js" defer></script>
+```
 
 ## Usage
 To use the library simply import the ```LocalForageService``` to your component, and use one of the provided methods.
