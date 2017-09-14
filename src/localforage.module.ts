@@ -1,20 +1,11 @@
 import {
-  InjectionToken,
   NgModule,
   ModuleWithProviders
 } from '@angular/core';
 
-import * as localforage from 'localforage';
-
 import { LocalForageService } from './localforage.service';
-
-export function localforageFactory() {
-  return localforage;
-}
-
-export function LocalForageToken() {
-  return new InjectionToken('localforage');
-}
+import { LocalForageToken } from './localforage.token';
+import { localforageFactory } from './localforage.factory';
 
 @NgModule()
 export class LocalForageModule {

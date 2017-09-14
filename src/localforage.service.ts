@@ -3,7 +3,7 @@ import { Injectable, Inject } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/fromPromise';
 
-import { LocalForageToken } from './localforage.module';
+import { LocalForageToken } from './localforage.token';
 import { LocalForageConfiguration } from './configuration.interface';
 
 @Injectable()
