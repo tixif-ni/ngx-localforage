@@ -1,5 +1,5 @@
 import * as localforage from 'localforage';
 
-export function localforageFactory() {
+export function localforageFactory():any {
   return localforage;
 }
