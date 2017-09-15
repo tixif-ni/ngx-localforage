@@ -17,15 +17,6 @@ imports: [
 ]
 ```
 
-3. Add the localforage to your application, so that it exists in the window global scope. You can do this by either 
-- Adding it to your applications third party scripts file like so:
-```polyfills.ts
-import 'localforage';
-```
-- Or simply by placing a link to the cdn script in your application's index.html page like so.
-```index.html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.5.0/localforage.min.js" defer></script>
-```
 
 ## Usage
 To use the library simply import the ```LocalForageService``` to your component, and use one of the provided methods.
