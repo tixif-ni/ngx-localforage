@@ -66,9 +66,10 @@ export class AppComponent implements OnInit {
       storeName: 'app',
       description: 'my description'
     }
-    this.localforage.config(config).subscribe(keys => {
-      console.log(keys);
-    });
+    this.localforage.config(config).subscribe(() => {
+      console.log('Localforage configured :D');
+    })
+    .catch(err => console.error('Error configuring localforage', err));
   }
 }
 ```
