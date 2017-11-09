@@ -1,6 +1,6 @@
 {
   "name": "ngx-localforage",
-  "version": "0.1.33",
+  "version": "0.1.35",
   "scripts": {
     "prepublish": "npm run lint && npm run ngc",
     "lint": "tslint src/**/*.ts",
@@ -27,6 +27,7 @@
     "url": "https://github.com/Tixifni/ngx-localforage/issues"
   },
   "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
   "dependencies": {
     "localforage": "1.5.0"
   },
@@ -38,11 +39,11 @@
     "@angular/compiler": "4.1.0",
     "@angular/compiler-cli": "4.1.0",
     "@angular/platform-server": "4.1.0",
-    "@types/jasmine": "~2.5.53",
-    "@types/jasminewd2": "~2.0.2",
+    "@types/jasmine": "2.5.53",
+    "@types/jasminewd2": "2.0.2",
     "codelyzer": "2.0.1",
-    "karma": "^1.7.1",
-    "rimraf": "^2.6.2",
+    "karma": "1.7.1",
+    "rimraf": "2.6.2",
     "rxjs": "5.0.1",
     "tslint": "4.5.1",
     "typescript": "2.2.0",
