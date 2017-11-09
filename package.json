@@ -1,12 +1,14 @@
 {
   "name": "ngx-localforage",
-  "version": "0.1.33",
+  "version": "0.1.35",
   "scripts": {
+    "prepublish": "npm run lint && npm run ngc",
     "lint": "tslint src/**/*.ts",
-    "test": "ngc && karma start",
-    "prepublish": "ngc",
+    "tslint": "tslint",
+    "test": "karma start",
     "ngc": "ngc",
-    "typings": "typings"
+    "clean": "rimraf dist/ && rimraf compiled",
+    "rimraf": "rimraf"
   },
   "repository": {
     "type": "git",
@@ -29,22 +31,25 @@
   "dependencies": {
     "localforage": "1.5.0"
   },
+  "peerDependencies": {
+    "@angular/core": "4.1.0"
+  },
   "devDependencies": {
-    "@angular/animations": "4.1.0",
-    "@angular/common": "4.1.0",
+    "@angular/core": "4.1.0",
     "@angular/compiler": "4.1.0",
     "@angular/compiler-cli": "4.1.0",
-    "@angular/core": "4.1.0",
     "@angular/platform-server": "4.1.0",
-    "@angular/platform-browser": "4.1.0",
+    "@types/jasmine": "2.5.53",
+    "@types/jasminewd2": "2.0.2",
     "codelyzer": "2.0.1",
+    "karma": "1.7.1",
+    "rimraf": "2.6.2",
     "rxjs": "5.0.1",
     "tslint": "4.5.1",
     "typescript": "2.2.0",
-    "typings": "1.0.4",
     "zone.js": "0.8.6"
   },
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=6.9.5"
   }
 }

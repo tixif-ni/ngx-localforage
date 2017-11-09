@@ -3,55 +3,53 @@ import { Injectable, Inject } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/fromPromise';
 
-import { LocalForageItem } from './models';
-import { LocalForageToken } from './tokens';
-
+import { LocalForageToken } from './localforage.token';
+import { LocalForageConfiguration } from './configuration.interface';
 
 @Injectable()
 export class LocalForageService {
 
-    constructor(@Inject(LocalForageToken) private localForage: any ) {
-    }
+    constructor(
+        @Inject(LocalForageToken) private localForage: any
+    ) { }
 
-    getItem(key: string): Observable<any> {
-        let promise = this.localForage.getItem(key);
-
+    config(config: LocalForageConfiguration): Observable<any> {
+        const promise = this.localForage.config(config);
         return Observable.fromPromise(promise);
     }
 
-    setItem(item: LocalForageItem): Observable<any> {
-        let promise = this.localForage.setItem(item.key, item.value);
+    getItem(key: string): Observable<any> {
+        const promise = this.localForage.getItem(key);
+        return Observable.fromPromise(promise);
+    }
 
+    setItem(key: string, item: any): Observable<any> {
+        const promise = this.localForage.setItem(key, item);
         return Observable.fromPromise(promise);
     }
 
     removeItem(key: string): Observable<any> {
-        let promise = this.localForage.removeItem(key);
-
+        const promise = this.localForage.removeItem(key);
         return Observable.fromPromise(promise);
     }
 
     clear(): Observable<any> {
-        let promise = this.localForage.clear();
-
+        const promise = this.localForage.clear();
         return Observable.fromPromise(promise);
     }
 
     length(): Observable<number> {
-        let promise = this.localForage.length();
-
+        const promise = this.localForage.length();
         return Observable.fromPromise(promise);
     }
 
     key(index: number): Observable<string> {
-        let promise = this.localForage.key(index);
-
+        const promise = this.localForage.key(index);
         return Observable.fromPromise(promise);
     }
 
     keys(): Observable<string[]> {
-        let promise = this.localForage.keys();
-
+        const promise = this.localForage.keys();
         return Observable.fromPromise(promise);
     }
 }
