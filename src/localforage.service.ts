@@ -13,9 +13,8 @@ export class LocalForageService {
         @Inject(LocalForageToken) private localForage: any
     ) { }
 
-    config(config: LocalForageConfiguration): Observable<any> {
-        const promise = this.localForage.config(config);
-        return Observable.fromPromise(promise);
+    config(config: LocalForageConfiguration): any {
+        return this.localForage.config(config);
     }
 
     getItem(key: string): Observable<any> {
