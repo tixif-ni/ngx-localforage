@@ -52,4 +52,9 @@ export class LocalForageService {
         const promise = this.localForage.keys();
         return Observable.fromPromise(promise);
     }
+
+    ready(): Observable<any> {
+        const promise = this.localForage.ready();
+        return Observable.fromPromise(promise);
+    }
 }
