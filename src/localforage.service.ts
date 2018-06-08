@@ -1,7 +1,6 @@
 import { Injectable, Inject } from '@angular/core';
 
 import { Observable, from } from 'rxjs';
-import 'rxjs/add/observable/fromPromise';
 
 import { LocalForageToken } from './localforage.token';
 import { LocalForageConfiguration } from './configuration.interface';
