@@ -1,6 +1,6 @@
 import { Injectable, Inject } from '@angular/core';
 
-import { Observable } from 'rxjs/Observable';
+import { Observable, from } from 'rxjs';
 import 'rxjs/add/observable/fromPromise';
 
 import { LocalForageToken } from './localforage.token';
@@ -15,41 +15,41 @@ export class LocalForageService {
 
     config(config: LocalForageConfiguration): Observable<any> {
         const promise = this.localForage.config(config);
-        return Observable.fromPromise(promise);
+        return from(promise);
     }
 
     getItem(key: string): Observable<any> {
         const promise = this.localForage.getItem(key);
-        return Observable.fromPromise(promise);
+        return from(promise);
     }
 
     setItem(key: string, item: any): Observable<any> {
         const promise = this.localForage.setItem(key, item);
-        return Observable.fromPromise(promise);
+        return from(promise);
     }
 
     removeItem(key: string): Observable<any> {
         const promise = this.localForage.removeItem(key);
-        return Observable.fromPromise(promise);
+        return from(promise);
     }
 
     clear(): Observable<any> {
         const promise = this.localForage.clear();
-        return Observable.fromPromise(promise);
+        return from(promise);
     }
 
     length(): Observable<number> {
         const promise = this.localForage.length();
-        return Observable.fromPromise(promise);
+        return from(promise);
     }
 
     key(index: number): Observable<string> {
         const promise = this.localForage.key(index);
-        return Observable.fromPromise(promise);
+        return from(promise);
     }
 
     keys(): Observable<string[]> {
         const promise = this.localForage.keys();
-        return Observable.fromPromise(promise);
+        return from(promise);
     }
 }
