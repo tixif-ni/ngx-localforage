@@ -5,7 +5,7 @@ ngx-localforage is a library that provides Angular4+ abstraction to the [localfo
 
 1. To install this library, run:
 ```bash
-$ npm install ngx-localforage --save
+$ npm install ngx-localforage6 --save
 ```
 
 2. In your application's [NgModule](https://angular.io/guide/ngmodule) add ```LocalForageModule``` to the imports section.
