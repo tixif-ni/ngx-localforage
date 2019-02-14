@@ -39,16 +39,16 @@ export class LocalForageService {
 
     length(): Observable<number> {
         const promise = this.localForage.length();
-        return from(promise);
+        return from<Observable<number>>(promise);
     }
 
     key(index: number): Observable<string> {
         const promise = this.localForage.key(index);
-        return from(promise);
+        return from<Observable<string>>(promise);
     }
 
     keys(): Observable<string[]> {
         const promise = this.localForage.keys();
-        return from(promise);
+        return from<Observable<string[]>>(promise);
     }
 }
