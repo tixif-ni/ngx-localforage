@@ -1,6 +1,6 @@
 {
     "name": "ngx-localforage",
-    "version": "9.0.0",
+    "version": "9.0.1",
     "scripts": {
         "prepublish": "npm run lint && npm run ngc",
         "lint": "tslint src/**/*.ts",
