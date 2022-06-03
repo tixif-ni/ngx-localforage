@@ -32,10 +32,10 @@
         "localforage": "1.7.3"
     },
     "peerDependencies": {
-        "@angular/core": "9.1.7"
+        "@angular/core": "11.0.5"
     },
     "devDependencies": {
-        "@angular/core": "9.1.7",
+        "@angular/core": "11.0.5",
         "@angular/compiler": "9.1.7",
         "@angular/compiler-cli": "9.1.7",
         "@angular/platform-server": "9.1.7",
