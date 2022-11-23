@@ -42,7 +42,7 @@
         "@types/jasmine": "3.5.10",
         "@types/jasminewd2": "2.0.8",
         "codelyzer": "5.2.2",
-        "karma": "5.0.5",
+        "karma": "5.2.3",
         "rimraf": "3.0.2",
         "rxjs": "6.5.5",
         "tslint": "6.1.2",
